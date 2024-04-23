@@ -3,12 +3,14 @@ package com.example;
 public class Celular {
     private String marca;
     private String modelo;
+    private String cor;
     private boolean bloqueado;
     private boolean ligado;
 
-    public Celular(String marca, String modelo) {
+    public Celular(String marca, String modelo, String cor) {
         this.marca = marca;
         this.modelo = modelo;
+        this.cor = cor;
         this.bloqueado = true; // Inicialmente, o celular está bloqueado
         this.ligado = false; // Inicialmente, o celular está desligado
     }
@@ -18,6 +20,7 @@ public class Celular {
         String estadoLigado = ligado ? "ligado" : "desligado";
         System.out.println("Marca do celular: " + marca);
         System.out.println("Modelo do celular: " + modelo);
+        System.out.println("Cor do celular: " + cor);
         System.out.println("O celular está " + estadoBloqueio);
         System.out.println("O celular está " + estadoLigado);
     }
