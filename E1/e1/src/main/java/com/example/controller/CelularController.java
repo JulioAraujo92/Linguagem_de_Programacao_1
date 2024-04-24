@@ -12,6 +12,9 @@ import javafx.scene.image.ImageView;
 
 public class CelularController {
     @FXML
+    private Button btnCadastroCelular;
+
+    @FXML
     private TextArea TextAreaNomeCelular;
 
     @FXML
@@ -38,8 +41,6 @@ public class CelularController {
     @FXML
     private TextArea TextAreaArmazenamentoCelular;
 
-    @FXML
-    private Button btnCadastroCelular;
 
     @FXML
     private Label lblNomeCelular;
@@ -47,8 +48,5 @@ public class CelularController {
     @FXML
     private ImageView imgBicicleta;
 
-    // @FXML
-    // void cadastrarBicicleta(ActionEvent event) {
 
-    // }
 }

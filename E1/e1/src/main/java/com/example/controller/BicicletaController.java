@@ -18,9 +18,11 @@ import com.example.service.ProdutoService;
 
 public class BicicletaController {
 
+    @FXML
+    private Button btnCadastroBicicleta;
     
     @FXML
-    void cadastrarBicicleta(ActionEvent event) {
+    public void cadastrarBicicleta(ActionEvent event) {
         // Obter os dados dos campos de texto e etiquetas
         String nome = TextAreaNomeBicicleta.getText();
         String marca = TextAreaMarcaBicicleta.getText();
@@ -50,8 +52,6 @@ public class BicicletaController {
         TextAreaPrecoBicicleta.clear();
     }
 
-    @FXML
-    private Button btnCadastroBicicleta;
 
     @FXML
     private TextArea TextAreaMarchasBicicleta;
