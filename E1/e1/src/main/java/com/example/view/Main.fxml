@@ -26,7 +26,13 @@
               <fx:include source="Camisa.fxml" />
             </content>
           </Tab>
-          
+
+          <!-- <Tab text="Produtos">
+            <content>
+              <fx:include source="Produtos.fxml" />
+            </content>
+          </Tab>
+           -->
         </tabs>
       </TabPane>
    </children>

@@ -50,7 +50,7 @@
                   </Label>
                   <ImageView fx:id="imgBicicleta" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
                      <image>
-                        <Image url="@../../../../resources/Image/Camisa.jpg" />
+                        <Image url="@../Image/Camisa.jpg" />
                      </image>
                   </ImageView>
                   <TextArea id="TextAreaMarchasBicicleta" fx:id="TextAreaPrecoCamisa" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="150.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER" />
@@ -79,7 +79,7 @@
                   <RowConstraints maxHeight="30.0" minHeight="40.0" prefHeight="30.0" vgrow="SOMETIMES" />
                </rowConstraints>
             </GridPane>
-            <Button id="btnCadastroBicicleta" fx:id="btnCadastroCamisa" layoutX="247.0" layoutY="261.0"  text="Cadastrar" />
+            <Button id="btnCadastroBicicleta" fx:id="btnCadastroCamisa" layoutX="247.0" layoutY="261.0" onAction="#cadastrarCamisa" text="Cadastrar" />
          </children>
       </AnchorPane>
    </children>

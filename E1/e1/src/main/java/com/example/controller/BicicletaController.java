@@ -21,6 +21,8 @@ public class BicicletaController {
     @FXML
     private Button btnCadastroBicicleta;
     
+    private ProdutoService produtoService = new ProdutoService();
+
     @FXML
     public void cadastrarBicicleta(ActionEvent event) {
         // Obter os dados dos campos de texto e etiquetas
@@ -34,13 +36,14 @@ public class BicicletaController {
         Bicicleta bicicleta = new Bicicleta(nome, preco, marca, "", cor, 0, marchas);
 
         // Adicionar a bicicleta ao ProdutoService
-        ProdutoService.getInstancia().adicionarProduto(bicicleta);
+        // ProdutoService.getInstancia().adicionarProduto(bicicleta);
+        produtoService.adicionarProduto(bicicleta);
 
         // Exibir uma mensagem de sucesso
         Alert alert = new Alert(AlertType.INFORMATION);
         alert.setTitle("Cadastro realizado");
         alert.setHeaderText(null);
-        alert.setContentText("Produto cadastrado com sucesso!");
+        alert.setContentText("Produto cadastrado com sucesso!\nNome: " + bicicleta.getNome() + "\nMarca: " + bicicleta.getMarca() + "\nCor: " + bicicleta.getCor() + "\nMarchas: " + bicicleta.getMarchas() + "\nPreço: " + bicicleta.getPreco());
 
         alert.showAndWait();
 

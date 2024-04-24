@@ -59,7 +59,7 @@
                   </Label>
                   <ImageView fx:id="imgBicicleta" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
                      <image>
-                        <Image url="@../../../../resources/Image/Bicicleta.jpeg" />
+                        <Image url="@../Image/Bicicleta.jpeg" />
                      </image>
                   </ImageView>
                   <TextArea id="TextAreaMarchasBicicleta" fx:id="TextAreaPrecoBicicleta" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="150.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER" />

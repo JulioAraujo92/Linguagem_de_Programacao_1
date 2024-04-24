@@ -30,14 +30,14 @@
          <children>
             <GridPane layoutX="8.0" layoutY="14.0" prefHeight="147.0" prefWidth="542.0">
                <children>
-                  <Label id="lblMarcaBicicleta" fx:id="lblNomeCelular" text="Nome:" GridPane.halignment="CENTER">
+                  <Label id="lblMarcaBicicleta" fx:id="lblNomeCelular" text="Marca:" GridPane.halignment="CENTER">
                      <font>
                         <Font size="14.0" />
                      </font>
                   </Label>
                   <TextArea id="TextAreaMarcaBicicleta" fx:id="TextAreaNomeCelular" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="150.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" />
                   <TextArea id="TextAreaCorBicicleta" fx:id="TextAreaMarcaCelular" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="150.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
-                  <Label id="lblCorBicicleta" fx:id="lblMarcaCelular" text="Marca:" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+                  <Label id="lblCorBicicleta" fx:id="lblMarcaCelular" text="Modelo:" GridPane.halignment="CENTER" GridPane.rowIndex="1">
                      <font>
                         <Font size="14.0" />
                      </font>
@@ -50,7 +50,7 @@
                   </Label>
                   <ImageView fx:id="imgBicicleta" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
                      <image>
-                        <Image url="@../../../../resources/Image/Celular.jpg" />
+                        <Image url="@../Image/Celular.jpg" />
                      </image>
                   </ImageView>
                   <TextArea id="TextAreaMarchasBicicleta" fx:id="TextAreaPrecoCelular" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="150.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER" />
@@ -79,7 +79,7 @@
                   <RowConstraints maxHeight="30.0" minHeight="40.0" prefHeight="30.0" vgrow="SOMETIMES" />
                </rowConstraints>
             </GridPane>
-            <Button id="btnCadastroBicicleta" fx:id="btnCadastroCelular" layoutX="247.0" layoutY="261.0" text="Cadastrar" />
+            <Button id="btnCadastroBicicleta" fx:id="btnCadastroCelular" layoutX="247.0" layoutY="261.0" onAction="#cadastrarCelular" text="Cadastrar" />
          </children>
       </AnchorPane>
    </children>
