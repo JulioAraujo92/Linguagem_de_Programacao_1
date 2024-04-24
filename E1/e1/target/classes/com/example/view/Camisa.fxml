@@ -21,7 +21,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox alignment="CENTER" prefHeight="341.0" prefWidth="600.0" spacing="20.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.MainController">
+<VBox alignment="CENTER" prefHeight="341.0" prefWidth="600.0" spacing="20.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.controller.MainController">
    <padding>
       <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
    </padding>
@@ -79,7 +79,7 @@
                   <RowConstraints maxHeight="30.0" minHeight="40.0" prefHeight="30.0" vgrow="SOMETIMES" />
                </rowConstraints>
             </GridPane>
-            <Button id="btnCadastroBicicleta" fx:id="btnCadastroCamisa" layoutX="247.0" layoutY="261.0" onAction="#cadastrarBicicleta" text="Cadastrar" />
+            <Button id="btnCadastroBicicleta" fx:id="btnCadastroCamisa" layoutX="247.0" layoutY="261.0" onAction="#" text="Cadastrar" />
          </children>
       </AnchorPane>
    </children>
