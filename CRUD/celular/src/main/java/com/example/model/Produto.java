@@ -1,6 +1,6 @@
 package com.example.model;
 
-public class Celular {
+public class Produto {
     private int id;
     private String marca;
     private String modelo;

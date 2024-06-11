@@ -20,6 +20,8 @@ public class App extends Application {
     public void start(Stage stage) throws IOException {
         CriarBanco banco = new CriarBanco(); // Crie uma instância de CriarBanco
         banco.ConectarBanco(); 
+        banco.criarTabela();
+        banco.fecharConexao();
 
         scene = new Scene(loadFXML("Main"), 640, 480);
         stage.setScene(scene);

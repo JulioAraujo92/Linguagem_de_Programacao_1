@@ -36,7 +36,7 @@ public class CriarBanco {
 
     public void criarTabela() {
         try {
-            String sql = "CREATE TABLE celular (id SERIAL PRIMARY KEY, marca VARCHAR(50), modelo VARCHAR(50), cor VARCHAR(50), preco FLOAT)";
+            String sql = "CREATE TABLE celular (id SERIAL PRIMARY KEY, marca VARCHAR(50), modelo VARCHAR(50), cor VARCHAR(50), preco VARCHAR(50))";
             conexao.createStatement().execute(sql);
             System.out.println("Tabela criada com sucesso!");
             fecharConexao();
