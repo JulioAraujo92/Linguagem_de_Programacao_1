@@ -60,6 +60,12 @@ public class ProdutoController {
         ColumnPreco.setCellValueFactory(new PropertyValueFactory<>("preco"));
         ColumnMarca.setCellValueFactory(new PropertyValueFactory<>("marca"));
 
+        ColumnCor.setStyle("-fx-alignment: CENTER;");
+        ColumnModelo.setStyle("-fx-alignment: CENTER;");
+        ColumnPreco.setStyle("-fx-alignment: CENTER;");
+        ColumnMarca.setStyle("-fx-alignment: CENTER;");
+        ColumnDeletar.setStyle("-fx-alignment: CENTER;");
+
         ColumnDeletar.setCellFactory(param -> new TableCell<Produto, Void>() {
             private final Button btn = new Button("Deletar");
 
