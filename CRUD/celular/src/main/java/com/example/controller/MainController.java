@@ -8,6 +8,8 @@ public class MainController {
     @FXML
     private TabPane meuTabPane;
 
+    private ProdutoController ProdutoController = new ProdutoController();
+
     public void initialize() {
         meuTabPane.getSelectionModel().selectedItemProperty().addListener((obs, oldTab, newTab) -> {
             if (newTab != null) {
@@ -29,7 +31,8 @@ public class MainController {
     }
 
     private void atualizarDadosProduto() {
-        // Código para atualizar os dados da aba Produto
+        // ProdutoController.carregarProdutos();
+        // ProdutoController.configurarTabela();
     }
 
     // Métodos adicionais conforme necessário
